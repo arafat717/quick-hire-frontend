@@ -1,11 +1,19 @@
+import ExploreByCategory from "@/components/Home/CategorySection/CategorySection";
+import CompaniesSection from "@/components/Home/CompaniesSection/CompaniesSection";
+import FeaturedJobs from "@/components/Home/FeatureJobs/FeatureJobs";
+import HeroSection from "@/components/Home/HeroSection/HeroSection";
+import LatestJobsOpen from "@/components/Home/LatestJobOpen/LatestJobOpen";
+import StartPostingJobSection from "@/components/Home/StartPostingJobSection/StartPostingJobSection";
+
 const page = () => {
   return (
-    <div className="flex flex-col gap-4 mt-6 mx-4">
-      <h2 className="text-5xl">Welcome home.</h2>
-      <p className="text-2xl">
-        Your Next.js starter pack is ready—built for speed, clarity, and
-        shipping fast.
-      </p>
+    <div>
+      <HeroSection></HeroSection>
+      <CompaniesSection></CompaniesSection>
+      <ExploreByCategory></ExploreByCategory>
+      <StartPostingJobSection></StartPostingJobSection>
+      <FeaturedJobs></FeaturedJobs>
+      <LatestJobsOpen></LatestJobsOpen>
     </div>
   );
 };
