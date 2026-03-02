@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sidebar";
 
 import { useAppSelector } from "@/redux/hooks";
-import { useDecodedToken } from "@/src/hooks/useDecodedToken";
+// import { useDecodedToken } from "@/src/hooks/useDecodedToken";
 
 export default function DashboardLayout({
   children,
@@ -16,8 +16,8 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const token = useAppSelector((state) => state.auth.token);
-  const decodedToken = useDecodedToken(token);
-  const role = decodedToken?.role || "ADMIN";
+  // const decodedToken = useDecodedToken(token);
+  const role = "ADMIN";
 
   return (
     <SidebarProvider>

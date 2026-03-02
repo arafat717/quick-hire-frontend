@@ -42,6 +42,11 @@ export default function QuickHireNav() {
               Browse Companies
             </a>
           </li>
+          <li>
+            <Link href="/admin/dashboard" className="text-sm font-medium text-[#515B6F] hover:text-indigo-600 transition-colors">
+              Dashboard
+            </Link>
+          </li>
         </ul>
 
         {/* Desktop actions */}
@@ -86,6 +91,13 @@ export default function QuickHireNav() {
           >
             Browse Companies
           </a>
+          <Link
+            href="/admin/dashboard"
+            className="text-sm font-medium text-[#515B6F] hover:text-indigo-600 hover:bg-indigo-50 transition-colors py-3 px-2 rounded-lg border-b border-gray-50"
+            onClick={() => setMenuOpen(false)}
+          >
+            Dashboard
+          </Link>
           <div className="flex flex-col gap-3 pt-3">
             <button className="w-full text-[15px] font-bold text-[#4640DE] border border-indigo-200 hover:bg-indigo-50 px-4 py-2.5 rounded-lg transition-colors">
               Login
