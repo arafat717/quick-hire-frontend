@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../../../public/images/logo.png";
+import Link from "next/link";
 
 export default function QuickHireNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,12 +21,14 @@ export default function QuickHireNav() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-            <Image src={logo} width={1000} height={1000} alt="logo image" />
+        <Link href={'/'}>
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+              <Image src={logo} width={1000} height={1000} alt="logo image" />
+            </div>
+            <span className="text-2xl font-bold text-[#25324B] tracking-tight">QuickHire</span>
           </div>
-          <span className="text-2xl font-bold text-[#25324B] tracking-tight">QuickHire</span>
-        </div>
+        </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8 list-none">
